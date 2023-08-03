@@ -1,6 +1,3 @@
-
-parser.add_argument('--path', type = str,
-                    default = './storepath', help='Enter the stored path')
 # import the necessary packages
 import pandas as pd 
 import numpy as np
