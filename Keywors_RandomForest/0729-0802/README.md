@@ -7,6 +7,7 @@
 
 ### 2. vocab size를 입력으로 받음
 - korean / Japanese count : 100
-- English count : 100
+- English count : 200
 
-### 3. frequency matrix : 상위 300개까지 보던 것을 2000개로 수정함.
+### 3. frequency matrix 
+- 상위 300개까지 보던 것을 2000개로 수정함.
