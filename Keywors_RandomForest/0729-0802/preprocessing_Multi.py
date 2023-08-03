@@ -11,8 +11,6 @@ parser.add_argument('--lang', type=str,
                     default='United States', help='root dir for data')
 parser.add_argument('--count', type=int,
                     default=200, help=' ')
-parser.add_argument('--path', type = str,
-                    default = './storepath', help='Enter the stored path')
 args = parser.parse_args()
 
 def createDirectory(directory):
