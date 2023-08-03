@@ -57,7 +57,6 @@ for item in temp :
     if args.lang in item :
         path.append(item)
 path.sort()
-# exit()
 
 # small model is not operated 
 # so, i change the small model to the large model
@@ -89,8 +88,7 @@ codes = {
 lang_filter = {
     'korean' : re.compile('[^ㄱ-ㅎㅏ-ㅣ가-힣]'),
     'english' : re.compile('[^a-zA-Z]'),
-    # 'japanese' : re.compile('[^ぁ-んァ-ン一-龯]')
-    'japanese' : re.compile('[^一-龯]')
+    'japanese' : re.compile('[^ぁ-んァ-ン一-龯]')
 }
 
 # text_filter = re.compile('[^ㄱ-ㅎㅏ-ㅣ가-힣]')
@@ -158,23 +156,6 @@ if args.lang == 'Russia':
 if args.lang == 'Portugal':
     select_lang = languages[7]
 
-# to find the maximum index of len(file[i])
-# max = 10000
-# total_num = 0 
-# count = 0
-# print("find the max values")
-# for date in dates:
-#     file = pd.read_csv('./python_TF-IDF_%s'%args.lang +'/data_kimgihu/%s.csv'%date)['full_text'].tolist()
-#     for i in range(len(file)):
-#         total_num += 1
-#         if max < len(file[i]):
-#             # max = len(file[i]) 
-#             count += 1
-
-# print(f'max value of file[i] = {max}')
-# print(f'total_num = {total_num}')
-# print(f'count = {count}')
-
 ###################################################################################################
 # normalizing and toknizing articles, removing stop word and saving the processed file using Spacy#
 ###################################################################################################
@@ -185,17 +166,17 @@ store_path = os.path.join(current_path,'python_TF-IDF_%s'%args.lang) # stored da
 path_noun = os.path.join(store_path,'data_noun')
 createDirectory(path_noun)
 
-# for date in dates:
-#     print('processing %s'%date)
-#     file = pd.read_csv('./python_TF-IDF_%s'%args.lang +'/data_kimgihu/%s.csv'%date)['full_text'].tolist()
-#     for i in range(len(file)):
-#         doc = lang_filter[select_lang].sub(' ',file[i])        
-#         if len(doc) <= 10000:
-#             file[i] = ' '.join(tokenizer(doc, select_lang))
-#         else :
-#             file[i] = ''
+for date in dates:
+    print('processing %s'%date)
+    file = pd.read_csv('./python_TF-IDF_%s'%args.lang +'/data_kimgihu/%s.csv'%date)['full_text'].tolist()
+    for i in range(len(file)):
+        doc = lang_filter[select_lang].sub(' ',file[i])        
+        if len(doc) <= 10000:
+            file[i] = ' '.join(tokenizer(doc, select_lang))
+        else :
+            file[i] = ''
             
-#     pd.DataFrame({'full_text':file}).to_csv(path_noun+'/n_%s.csv'%date, index=False)
+    pd.DataFrame({'full_text':file}).to_csv('./python_TF-IDF_%s'%args.lang +'/data_kimgihu/n_%s.csv'%date, index=False)
 
 
 # ################################
@@ -208,7 +189,7 @@ set_words = []
 
 for date in dates:
     print('processing %s'%date)
-    file = pd.read_csv(path_noun+'/n_%s.csv'%date)['full_text'].dropna().tolist()
+    file = pd.read_csv('./python_TF-IDF_%s'%args.lang +'/data_kimgihu/n_%s.csv'%date)['full_text'].dropna().tolist()
     for i in range(len(file)):
         newlist = file[i].split(' ')
         set_words.extend(newlist) 
@@ -224,7 +205,7 @@ total_text = []
 print("total_text")
 for date in dates:
     print('processing %s'%date)
-    file = pd.read_csv(path_noun+'/n_%s.csv'%date)['full_text'].dropna().tolist()
+    file = pd.read_csv('./python_TF-IDF_%s'%args.lang +'/data_kimgihu/n_%s.csv'%date)['full_text'].dropna().tolist()
     for article in file:
         total_text.extend(article.split(' '))
 
@@ -242,27 +223,24 @@ table = pd.DataFrame({'word':list(dict_word.keys()),'count':matrix_word}).sort_v
 # drop words that appear less than args.count times
 table = table[table['count'] > args.count]
 table = table.reset_index().drop(columns=['index'])
-table.to_csv(store_path +'/keywords_%s.csv'%args.count)
+table.to_csv('./python_TF-IDF_%s'%args.lang +'/keywords_%s.csv'%args.count)
 
 
 
-key_date = pd.DataFrame(pd.read_csv(store_path+'/key_dates_%s.csv'%args.lang), columns=['date','label'])
+key_date = pd.DataFrame(pd.read_csv('./python_TF-IDF_%s'%args.lang +'/key_dates_%s.csv'%args.lang), columns=['date','label'])
 list_word = table['word'].values.tolist()
 
 ######################################################
 ##### vectorize the data of each date (ver.02)########
 ######################################################
-keywords = pd.read_csv(store_path+'/keywords_%s.csv'%args.count)['word'].tolist()
+keywords = pd.read_csv('./python_TF-IDF_%s'%args.lang +'/keywords_%s.csv'%args.count)['word'].tolist()
 
 # keywords: list
 # searching: list.index(item)
-createDirectory(os.path.join(store_path,'dvectors'))
-createDirectory(os.path.join(store_path,'vectors2'))
-dvectors_path = os.path.join(store_path,'dvectors')
-vectors2_path = os.path.join(store_path,'vectors2')
+
 for date in dates:
     print(date)
-    file = pd.read_csv(path_noun+'/n_%s.csv'%date)['full_text'].dropna().tolist()
+    file = pd.read_csv('./python_TF-IDF_%s'%args.lang +'/data_kimgihu/data_kimgihu/n_%s.csv'%date)['full_text'].dropna().tolist()
     total_data = np.zeros(len(keywords), dtype=int)
     doc_vectors = []
     
@@ -277,13 +255,13 @@ for date in dates:
         doc_vectors.append(doc_vector)
     
     doc_vectors = np.array(doc_vectors)
-    np.savetxt(os.path.join(store_path,'dvectors')+'%s.csv'%date, doc_vectors, fmt = '%d', delimiter=',')
-    np.savetxt(os.path.join(store_path,'vectors2')+'%s.csv'%date, total_data, fmt = '%d', delimiter=',')
+    np.savetxt('./python_TF-IDF_%s'%args.lang +'/dvectors/%s.csv'%date, doc_vectors, fmt = '%d', delimiter=',')
+    np.savetxt('./python_TF-IDF_%s'%args.lang +'/vectors2/%s.csv'%date, total_data, fmt = '%d', delimiter=',')
 
 doc_vectors = 0
    
 for date in val_dates:
-    doc_vector = np.loadtxt(os.path.join(store_path,'dvectors')+'%s.csv'%date, delimiter=',')
+    doc_vector = np.loadtxt('./python_TF-IDF_%s'%args.lang +'/dvectors/%s.csv'%date, delimiter=',')
     doc_vectors += len(doc_vector)
 
 print(f'the number of validation vectors : {doc_vectors}')
@@ -291,7 +269,7 @@ print(f'the number of validation vectors : {doc_vectors}')
 doc_vectors = 0
    
 for date in test_dates:
-    doc_vector = np.loadtxt(os.path.join(store_path,'dvectors')+'%s.csv'%date, delimiter=',')
+    doc_vector = np.loadtxt('./python_TF-IDF_%s'%args.lang +'/dvectors/%s.csv'%date, delimiter=',')
     doc_vectors += len(doc_vector)
 
 print(f'the number of test vectors : {doc_vectors}')
@@ -299,7 +277,7 @@ print(f'the number of test vectors : {doc_vectors}')
 doc_vectors = 0
    
 for date in dates:
-    doc_vector = np.loadtxt(os.path.join(store_path,'dvectors')+'%s.csv'%date, delimiter=',')
+    doc_vector = np.loadtxt('./python_TF-IDF_%s'%args.lang +'/dvectors/%s.csv'%date, delimiter=',')
     doc_vectors += len(doc_vector)
 
 print(f'the number of all vectors : {doc_vectors}')
