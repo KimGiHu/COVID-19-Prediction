@@ -1,6 +1,5 @@
 # Project name : Detector of increase and decrease in confirmed cases using Method of extracting key words based on keydates  (keydates 기반의 핵심어 추출방법을 이용한 확진자 증감 검출기)
 
-## 1. 논문 작성전 핵심내용 요약
 
 - 본 논문에서 주장하고자 하는 바?
 
@@ -14,4 +13,5 @@
 
 (5) 결론(Conclusion) : keydates 기반의 핵심어 추출방법을 이용한 것이 기존의 핵심어 기반 추출방법보다 탁월함을 보임.(ctf-idf기반의 핵심어 추출)
 
-
+- 본 논문 구성 방식 ?
+  (1) 
