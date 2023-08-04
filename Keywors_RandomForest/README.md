@@ -1,6 +1,6 @@
 # Project name : Detector of increase and decrease in confirmed cases using Method of extracting key words based on keydates  (keydates 기반의 핵심어 추출방법을 이용한 확진자 증감 검출기)
 
-1. 논문 작성전 핵심내용 요약
+## 1. 논문 작성전 핵심내용 요약
 
 - 본 논문에서 주장하고자 하는 바?
 
