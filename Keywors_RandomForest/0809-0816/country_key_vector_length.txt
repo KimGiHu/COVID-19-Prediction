@@ -3,11 +3,11 @@ traind : test = 1096 : 212
 
 (covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 test.py --lang 'United States' --count 200
 key_vector : 371
-non_key_vector: 725
+non_key_vector : 725
 
 (covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 test.py --lang 'Republic of Korea' --count 100
 key_vector : 387
-non_key_vector:709
+non_key_vector : 709
   
 (covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 test.py --lang 'Japan' --count 100
 413
@@ -16,16 +16,17 @@ non_key_vector : 683
   
 (covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 test.py --lang 'France' --count 100
 key_vector : 428
-non_key_vector:668
+non_key_vector : 668
   
 (covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 test.py --lang 'Italy' --count 100
 key_vector : 361
-non_key_vector:735
+non_key_vector : 735
 
 (covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 test.py --lang 'Russia' --count 100
 key_vector : 252
-non_key_vector:844
+non_key_vector : 844
 
 (covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 test.py --lang 'Portugal' --count 100
 key_vector : 389
-non_key_vector:707
+non_key_vector : 707
+key_vector의 길이 : 12905
