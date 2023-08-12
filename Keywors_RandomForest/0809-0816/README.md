@@ -3,6 +3,6 @@
 
 2. 추후에 실험을 진행한 결과를 비교하고, 이를 논문의 주요 기여도로 활용하였다.
 
-3. K-fold Cross Validation을 이용하여서, 재실헝을 해본 결과 성능이 좋지 않게 나옴을 보였다.
+3. K-fold Cross Validation(K=5)을 이용하여 hyper parameter을 찾고, vocab vector의 크기를 해당날짜의 뉴스길이만큼 나누어서 뉴스갯수에 의존적이지 않게끔, 뉴스 한개당 vocab vector을 따로 만들었다.
 
 
