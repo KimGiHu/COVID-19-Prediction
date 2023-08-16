@@ -5,7 +5,7 @@ import os
 import re
 import argparse
 
-# python inputs : language, count, store_path
+# python inputs : language, count
 parser = argparse.ArgumentParser()
 parser.add_argument('--lang', type=str,
                     default='United States', help='Select the language')
