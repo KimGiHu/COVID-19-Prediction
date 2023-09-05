@@ -5,7 +5,8 @@
 # ICCE-Asia 2023 Conference Paper & Simulation Results
 - 주제 : Prediction of Increase in COVID-19 confirmed cases through multilingual keyword extraction
 - 저자 : Gi-Hu Kim, Gil-Jin Jang*
-- Abstract : 
+- Abstract :
+- 
 This paper proposes new method for COVID-19 spread prediction using the multi-lingual news. 
 A novel keyword extraction method is proposed and a random forest classifier that takes the relative frequency of keyword appearances as input. 
 According to the experimental results, the average test AUC(area under the ROC curve) scores of United States, Republic of Korea, and Japan showed 7.67% improved performance on the average compared to the existing system.
