@@ -12,6 +12,7 @@ According to the experimental results, the average test AUC(area under the ROC c
 
 - 영어, 한국어, 일본어에 대해서 실험한 결과
 |  Test AUC |	United States	| Japan	| Korea |
+|-----------|---------------|-------|-------|
 |NTFKD	| 0.79(C=20)	| 0.73(C=25)	| 0.54(C=10)|
 |RTCKD	| 0.81(C=25)	| 0.79(C=25)	| 0.69(C=5)|
 
