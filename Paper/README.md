@@ -13,7 +13,7 @@ According to the experimental results, the average test AUC(area under the ROC c
 
 - proposed method :
  
-  $RTCKD_i$= $(TC_{i})^{kd}$/(∑_j^(|D|)▒∑_k^(|T_j |)▒n_(k,j) ))≈P(t_i |D^((kd)))$
+  $RTCKD_i$= $((TC_{i})^{kd})/2$/(∑_j^(|D|)▒∑_k^(|T_j |)▒n_(k,j) ))≈P(t_i |D^((kd)))$
   
   
 - 영어, 한국어, 일본어에 대해서 실험한 결과
