@@ -19,7 +19,7 @@ total vocab size :  521267
 **ADJ rev_metric1 F1-score : 0.78  /   index : 5.00**
 
 ### 2. 새로운 키워드 추출방법
-
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - **동사단위 키워드** 
 
 new_metric1 ['lead', 'experience', 'feel', 'include', 'increase', 'affect', 'occur', 'lose', 'eat', 'leave', 'reduce', 'improve', 'add', 'choose', 'relate']
@@ -39,6 +39,8 @@ ctfidf1 ['include', 'feel', 'accord', 'add', 'follow', 'lead', 'start', 'report'
 ctfidf2 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report', 'increase', 'leave', 'continue', 'eat', 'provide', 'receive', 'develop']
 
 ctfidf3 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report', 'leave', 'continue', 'eat', 'increase', 'provide', 'play', 'die']
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 - **명사단위**
 
@@ -60,7 +62,43 @@ ctfidf2 ['people', 'time', 'patient', 'day', 'covid', 'symptom', 'health', 'dise
 
 ctfidf3 ['people', 'time', 'day', 'patient', 'symptom', 'covid', 'health', 'disease', 'study', 'week', 'life', 'treatment', 'body', 'death', 'coronavirus']
 
+######################## ctfidf1 F1-score Results ########################
 
+ctfidf1 F1-score : 0.77 index : 15.00 
+
+######################## ctfidf2 F1-score Results ########################
+
+ctfidf2 F1-score : 0.77 index : 10.00 
+
+######################## ctfidf3 F1-score Results ########################
+
+ctfidf3 F1-score : 0.77 index : 20.00 
+
+######################## new_metric1 F1-score Results ########################
+
+new_metric1 F1-score : 0.77     index : 15.00 
+
+######################## new_metric2 F1-score Results ########################
+
+new_metric2 F1-score : 0.77     index : 25.00 
+
+######################## new_metric3 F1-score Results ########################
+
+new_metric3 F1-score : 0.77     index : 10.00 
+
+######################## new_metric4 F1-score Results ########################
+
+new_metric4 F1-score : 0.77     index : 10.00 
+
+######################## new_metric5 F1-score Results ########################
+
+new_metric5 F1-score : 0.77     index : 5.00 
+
+######################## new_metric6 F1-score Results ########################
+
+new_metric6 F1-score : 0.77     index : 30.00 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - **형용사단위**
 
 new_metric1 ['medical', 'common', 'professional', 'cold', 'physical', 'bad', 'severe', 'russian', 'healthy', 'mental', 'black', 'inflammatory', 'abdominal', 'rare', 'clinical']
@@ -81,3 +119,27 @@ ctfidf2 ['medical', 'common', 'severe', 'late', 'bad', 'positive', 'social', 'he
 
 ctfidf3 ['medical', 'common', 'social', 'late', 'severe', 'positive', 'bad', 'public', 'healthy', 'local', 'safe', 'clinical', 'respiratory', 'sick', 'hard']
 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- **명사/동사단위**
+2-1. Keywords Extraction
+  
+new_metric1 ['pain', 'heart', 'symptom', 'child', 'experience', 'doctor', 'body', 'infection', 'patient', 'sign', 'blood', 'condition', 'lead', 'headache', 'cancer']
+
+new_metric2 ['coronavirus', 'virus', 'hand', 'spread', 'outbreak', 'flu', 'covid', 'people', 'cough', 'wash', 'travel', 'quarantine', 'stay', 'distancing', 'store']
+
+new_metric3 ['heart', 'pain', 'doctor', 'headache', 'wind', 'snow', 'infection', 'attack', 'child', 'symptom', 'variant', 'chest', 'medication', 'fungus', 'sign']
+
+new_metric4 ['covid', 'vaccine', 'pandemic', 'coronavirus', 'study', 'patient', 'people', 'water', 'include', 'lockdown', 'receive', 'trial', 'school', 'week', 'cell']
+
+new_metric5 ['patient', 'covid', 'study', 'symptom', 'include', 'vaccine', 'time', 'cancer', 'blood', 'child', 'disease', 'treatment', 'body', 'experience', 'pain']
+
+new_metric6 ['coronavirus', 'virus', 'spread', 'outbreak', 'hand', 'variant', 'cough', 'sound', 'travel', 'flu', 'quarantine', 'sneeze', 'wash', 'official', 'confirm']
+
+ctfidf1 ['people', 'time', 'day', 'patient', 'symptom', 'include', 'health', 'covid', 'disease', 'study', 'body', 'child', 'report', 'life', 'feel']
+
+ctfidf2 ['people', 'time', 'patient', 'day', 'include', 'symptom', 'covid', 'study', 'health', 'disease', 'report', 'treatment', 'body', 'life', 'week']
+
+ctfidf3 ['people', 'time', 'day', 'patient', 'include', 'symptom', 'covid', 'health', 'disease', 'study', 'report', 'week', 'life', 'feel', 'treatment']
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- **명사/동사/형용사단위**
