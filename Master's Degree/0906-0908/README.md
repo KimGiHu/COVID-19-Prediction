@@ -193,7 +193,7 @@ new_metric6 F1-score : 0.78     index : 5.00
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - **명사/동사단위**
-- 
+  
 2-1. Keywords Extraction
   
 new_metric1 ['pain', 'heart', 'symptom', 'child', 'experience', 'doctor', 'body', 'infection', 'patient', 'sign', 'blood', 'condition', 'lead', 'headache', 'cancer']
@@ -214,5 +214,79 @@ ctfidf2 ['people', 'time', 'patient', 'day', 'include', 'symptom', 'covid', 'stu
 
 ctfidf3 ['people', 'time', 'day', 'patient', 'include', 'symptom', 'covid', 'health', 'disease', 'study', 'report', 'week', 'life', 'feel', 'treatment']
 
+######################## ctfidf1 F1-score Results ########################
+ctfidf1 F1-score : 0.78 index : 10.00 
+######################## ctfidf2 F1-score Results ########################
+ctfidf2 F1-score : 0.78 index : 15.00 
+######################## ctfidf3 F1-score Results ########################
+ctfidf3 F1-score : 0.78 index : 10.00 
+######################## new_metric1 F1-score Results ########################
+new_metric1 F1-score : 0.78     index : 25.00 
+######################## new_metric2 F1-score Results ########################
+new_metric2 F1-score : 0.78     index : 10.00 
+######################## new_metric3 F1-score Results ########################
+new_metric3 F1-score : 0.78     index : 25.00 
+######################## new_metric4 F1-score Results ########################
+new_metric4 F1-score : 0.78     index : 5.00 
+######################## new_metric5 F1-score Results ########################
+new_metric5 F1-score : 0.78     index : 25.00 
+######################## new_metric6 F1-score Results ########################
+new_metric6 F1-score : 0.78     index : 30.00
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - **명사/동사/형용사단위**
+
+2-1. Keywords Extraction
+
+new_metric1 ['pain', 'heart', 'symptom', 'child', 'experience', 'doctor', 'body', 'infection', 'patient', 'sign', 'blood', 'medical', 'lead', 'condition', 'headache']
+
+new_metric2 ['coronavirus', 'virus', 'hand', 'spread', 'outbreak', 'flu', 'people', 'public', 'covid', 'cough', 'wash', 'travel', 'quarantine', 'sick', 'stay']
+
+new_metric3 ['heart', 'pain', 'cold', 'doctor', 'headache', 'wind', 'snow', 'infection', 'attack', 'child', 'symptom', 'variant', 'chest', 'medication', 'fungus']
+
+new_metric4 ['covid', 'pandemic', 'vaccine', 'coronavirus', 'patient', 'study', 'people', 'water', 'include', 'lockdown', 'receive', 'trial', 'school', 'week', 'cell']
+
+new_metric5 ['patient', 'covid', 'study', 'symptom', 'include', 'vaccine', 'time', 'cancer', 'blood', 'child', 'disease', 'treatment', 'body', 'experience', 'pain']
+
+new_metric6 ['coronavirus', 'virus', 'spread', 'outbreak', 'hand', 'variant', 'cough', 'sound', 'travel', 'flu', 'sick', 'quarantine', 'sneeze', 'wash', 'official']
+
+ctfidf1 ['people', 'time', 'patient', 'day', 'symptom', 'include', 'health', 'covid', 'disease', 'study', 'body', 'child', 'report', 'life', 'feel']
+
+ctfidf2 ['people', 'time', 'patient', 'day', 'include', 'covid', 'symptom', 'study', 'health', 'disease', 'report', 'treatment', 'body', 'life', 'week']
+
+ctfidf3 ['people', 'time', 'patient', 'day', 'include', 'symptom', 'covid', 'health', 'disease', 'study', 'report', 'life', 'week', 'feel', 'treatment']
+
+######################## ctfidf1 F1-score Results ########################
+
+ctfidf1 F1-score : 0.77 index : 10.00 
+
+######################## ctfidf2 F1-score Results ########################
+
+ctfidf2 F1-score : 0.77 index : 10.00 
+
+######################## ctfidf3 F1-score Results ########################
+
+ctfidf3 F1-score : 0.77 index : 10.00 
+
+######################## new_metric1 F1-score Results ########################
+
+new_metric1 F1-score : 0.77     index : 30.00 
+
+######################## new_metric2 F1-score Results ########################
+
+new_metric2 F1-score : 0.77     index : 15.00 
+
+######################## new_metric3 F1-score Results ########################
+
+new_metric3 F1-score : 0.77     index : 20.00 
+
+######################## new_metric4 F1-score Results ########################
+
+new_metric4 F1-score : 0.77     index : 30.00 
+
+######################## new_metric5 F1-score Results ########################
+
+new_metric5 F1-score : 0.77     index : 5.00 
+
+######################## new_metric6 F1-score Results ########################
+
+new_metric6 F1-score : 0.77     index : 30.00 
