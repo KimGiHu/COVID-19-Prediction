@@ -6,7 +6,7 @@ rev_metric1 F1-score : 0.78     index : 15.00
 
 2. 새로운 키워드 추출방법
 
-**동사단위**
+- **동사단위**
 
 new_metric1 ['lead', 'experience', 'feel', 'include', 'increase', 'affect', 'occur', 'lose', 'eat', 'leave', 'reduce', 'improve', 'add', 'choose', 'relate']
 
@@ -26,7 +26,7 @@ ctfidf2 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report'
 
 ctfidf3 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report', 'leave', 'continue', 'eat', 'increase', 'provide', 'play', 'die']
 
-**명사단위**
+- **명사단위**
 
 new_metric1 ['pain', 'heart', 'symptom', 'child', 'doctor', 'body', 'infection', 'patient', 'blood', 'condition', 'cancer', 'medication', 'treatment', 'headache', 'time']
 
@@ -47,7 +47,7 @@ ctfidf2 ['people', 'time', 'patient', 'day', 'covid', 'symptom', 'health', 'dise
 ctfidf3 ['people', 'time', 'day', 'patient', 'symptom', 'covid', 'health', 'disease', 'study', 'week', 'life', 'treatment', 'body', 'death', 'coronavirus']
 
 
-**형용사단위**
+- **형용사단위**
 
 new_metric1 ['medical', 'common', 'professional', 'cold', 'physical', 'bad', 'severe', 'russian', 'healthy', 'mental', 'black', 'inflammatory', 'abdominal', 'rare', 'clinical']
 
