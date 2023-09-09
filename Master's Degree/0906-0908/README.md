@@ -40,6 +40,42 @@ ctfidf2 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report'
 
 ctfidf3 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report', 'leave', 'continue', 'eat', 'increase', 'provide', 'play', 'die']
 
+######################## ctfidf1 F1-score Results ########################
+
+ctfidf1 F1-score : 0.78 index : 15.00 
+
+######################## ctfidf2 F1-score Results ########################
+
+ctfidf2 F1-score : 0.78 index : 25.00 
+
+######################## ctfidf3 F1-score Results ########################
+
+ctfidf3 F1-score : 0.78 index : 15.00 
+
+######################## new_metric1 F1-score Results ########################
+
+new_metric1 F1-score : 0.78     index : 25.00 
+
+######################## new_metric2 F1-score Results ########################
+
+new_metric2 F1-score : 0.78     index : 20.00 
+
+######################## new_metric3 F1-score Results ########################
+
+new_metric3 F1-score : 0.78     index : 30.00 
+
+######################## new_metric4 F1-score Results ########################
+
+new_metric4 F1-score : 0.78     index : 20.00 
+
+######################## new_metric5 F1-score Results ########################
+
+new_metric5 F1-score : 0.78     index : 30.00 
+
+######################## new_metric6 F1-score Results ########################
+
+new_metric6 F1-score : 0.78     index : 15.00 
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 - **명사단위**
