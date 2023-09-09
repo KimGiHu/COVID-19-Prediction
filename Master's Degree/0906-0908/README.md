@@ -119,8 +119,45 @@ ctfidf2 ['medical', 'common', 'severe', 'late', 'bad', 'positive', 'social', 'he
 
 ctfidf3 ['medical', 'common', 'social', 'late', 'severe', 'positive', 'bad', 'public', 'healthy', 'local', 'safe', 'clinical', 'respiratory', 'sick', 'hard']
 
+######################## ctfidf1 F1-score Results ########################
+
+ctfidf1 F1-score : 0.78 index : 10.00 
+
+######################## ctfidf2 F1-score Results ########################
+
+ctfidf2 F1-score : 0.78 index : 10.00 
+
+######################## ctfidf3 F1-score Results ########################
+
+ctfidf3 F1-score : 0.78 index : 10.00 
+
+######################## new_metric1 F1-score Results ########################
+
+new_metric1 F1-score : 0.78     index : 30.00 
+
+######################## new_metric2 F1-score Results ########################
+
+new_metric2 F1-score : 0.78     index : 20.00 
+
+######################## new_metric3 F1-score Results ########################
+
+new_metric3 F1-score : 0.78     index : 10.00 
+
+######################## new_metric4 F1-score Results ########################
+
+new_metric4 F1-score : 0.78     index : 30.00 
+
+######################## new_metric5 F1-score Results ########################
+
+new_metric5 F1-score : 0.78     index : 15.00 
+
+######################## new_metric6 F1-score Results ########################
+
+new_metric6 F1-score : 0.78     index : 5.00
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - **명사/동사단위**
+- 
 2-1. Keywords Extraction
   
 new_metric1 ['pain', 'heart', 'symptom', 'child', 'experience', 'doctor', 'body', 'infection', 'patient', 'sign', 'blood', 'condition', 'lead', 'headache', 'cancer']
