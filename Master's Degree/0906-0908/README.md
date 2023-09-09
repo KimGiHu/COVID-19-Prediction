@@ -25,7 +25,7 @@ ctfidf2 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report'
 
 ctfidf3 ['include', 'feel', 'accord', 'follow', 'add', 'start', 'lead', 'report', 'leave', 'continue', 'eat', 'increase', 'provide', 'play', 'die']
 
-3) 명사단위
+2) 명사단위
 2-1. Keywords Extraction
 new_metric1 ['pain', 'heart', 'symptom', 'child', 'doctor', 'body', 'infection', 'patient', 'blood', 'condition', 'cancer', 'medication', 'treatment', 'headache', 'time']
 
@@ -46,7 +46,7 @@ ctfidf2 ['people', 'time', 'patient', 'day', 'covid', 'symptom', 'health', 'dise
 ctfidf3 ['people', 'time', 'day', 'patient', 'symptom', 'covid', 'health', 'disease', 'study', 'week', 'life', 'treatment', 'body', 'death', 'coronavirus']
 
 
-5) 형용사단위
+3) 형용사단위
 2-1. Keywords Extraction
 new_metric1 ['medical', 'common', 'professional', 'cold', 'physical', 'bad', 'severe', 'russian', 'healthy', 'mental', 'black', 'inflammatory', 'abdominal', 'rare', 'clinical']
 
