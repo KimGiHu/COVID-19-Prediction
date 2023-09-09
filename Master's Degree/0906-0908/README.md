@@ -75,7 +75,9 @@ new_metric5 F1-score : 0.78     index : 30.00
 ######################## new_metric6 F1-score Results ########################
 
 new_metric6 F1-score : 0.78     index : 15.00 
-
+**
+######################## new_metric & multi-classed preprocessed datasets F1-score Results ########################
+new_metric6 F1-score : 0.78     index : 10.00 **
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 - **명사단위**
@@ -290,3 +292,7 @@ new_metric5 F1-score : 0.77     index : 5.00
 ######################## new_metric6 F1-score Results ########################
 
 new_metric6 F1-score : 0.77     index : 30.00 
+
+
+**######################## new_metric & multi-classed preprocessed datasets F1-score Results ########################
+new_metric6 F1-score : 0.78     index : 5.00 **
