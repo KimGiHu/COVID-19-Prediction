@@ -10,7 +10,9 @@ total vocab size :  521296
   
 total vocab size :  521267
 
-### 1. 기존의 키워드 추출방법 : **rev_metric1 F1-score : 0.78  /   index : 15.00**
+### 1. 기존의 키워드 추출방법 : 
+
+**rev_metric1 F1-score : 0.78  /   index : 15.00**
 
 ### 2. 새로운 키워드 추출방법
 
