@@ -2,9 +2,9 @@
 
 0. 전처리한 결과 :
 
-** NOUN_VERB_ADJ ** total vocab size :  521296
+**NOUN_VERB_ADJ** total vocab size :  521296
 
-** NOUN_VERB ** total vocab size :  521267
+**NOUN_VERB**  total vocab size :  521267
 
 1. 기존의 키워드 추출방법 : **rev_metric1 F1-score : 0.78  /   index : 15.00**
 
