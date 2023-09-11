@@ -7,7 +7,7 @@ run.py : 확진자수와 뉴스 같이 사용하는 모델
 run_news_only.py : 뉴스만 사용하는 모델
 
 # Requirements
-blis==0.7.10  
+blis==0.7.10</br>
 catalogue==2.0.9  
 certifi==2023.7.22  
 charset-normalizer==3.2.0  
