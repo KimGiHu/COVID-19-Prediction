@@ -1,6 +1,7 @@
 # USAGE
 
-실행 방법 :</br>
+실행 방법 : </br>
+
 -확진자수와 뉴스 같이 사용하는 모델 </br>
 python run.py --input input.json --output output.json</br>
 - 뉴스만 사용하는 모델 </br>
