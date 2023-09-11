@@ -1,7 +1,7 @@
 # USAGE
 
 가상환경 : </br>
-$ source vevn/bin/activate
+$ source vevn/bin/activate </br>
 실행 방법 : </br>
 
 - 확진자수와 뉴스 같이 사용하는 모델 </br>
