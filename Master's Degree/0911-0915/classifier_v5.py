@@ -144,10 +144,9 @@ for name in names:
             # print(np.sum(train_y==0), np.sum(train_y==1), np.sum(train_y==2))
             # continue
 
-            clf = RandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced_subsample', random_state=0)
             # clf = RandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced_subsample', random_state=0)
             # clf = BalancedRandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced', random_state=0, sampling_strategy = 'all')
-            # clf = make_pipeline(StandardScaler(),BalancedRandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced', random_state=0, sampling_strategy = 'all'))
+            clf = make_pipeline(StandardScaler(),BalancedRandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced', random_state=0, sampling_strategy = 'all'))
             # clf = SVC()
             # clf = make_pipeline(StandardScaler(), SVC(gamma='auto'))
 
@@ -216,9 +215,9 @@ for name in names:
     train_X, train_y = train_dataset
     test_X, test_y = test_dataset
 
-    clf = RandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced_subsample', random_state=0)        
+    # clf = RandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced_subsample', random_state=0)        
     # clf = BalancedRandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced', random_state=0, sampling_strategy = 'all')
-    # clf = make_pipeline(StandardScaler(),BalancedRandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced', random_state=0, sampling_strategy = 'all'))
+    clf = make_pipeline(StandardScaler(),BalancedRandomForestClassifier(n_estimators=100, max_depth=50, n_jobs=-1, class_weight='balanced', random_state=0, sampling_strategy = 'all'))
     # clf = SVC()
     # clf = make_pipeline(StandardScaler(), SVC(gamma='auto'))
     clf.fit(train_X, train_y)
