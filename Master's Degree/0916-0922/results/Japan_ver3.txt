@@ -1,0 +1,50 @@
+dates[0] = 2019_08_01
+1065 243
+2-1. Proposed Method
+rev_metric1 ['陰性', '隔離', '陽性', '自粛', '軽症', '消毒', '療養', '倦怠', '濃厚', '知事', '検温', '漢方', '延期', '花粉', '要請']
+rev_metric2 ['感染', '新型', '自分', '時間', '場合', '世界', '症状', '必要', '女性', '患者', '見る', '写真', '研究', '情報', '発表']
+rev_metric3 ['感染', '新型', '症状', '検査', '拡大', '医療', '場合', '発表', '患者', '確認', '対策', '自分', '発熱', '接触', '病院']
+rev_metric4 ['秋', '日曜', '二塁', '台風', '生理', '相続', '猿', '痘', '侵攻', '適時', '耐性', '肝炎', '糖質', '脱水', '試合']
+2-2. Class-Based TF-IDF Baselines
+ctfidf ['日', '人', '年', '月', '者', '思', '感染', '中', '上', '性', '大', '行', '時', '感', '後']
+(1052,) (230,)
+ctfidf
+AUC for the ctfidf 5 keywords  = 0.5137625005077323
+ctfidf
+AUC for the ctfidf 10 keywords  = 0.5353443450822786
+ctfidf
+AUC for the ctfidf 15 keywords  = 0.5594992838572759
+ctfidf
+AUC for the ctfidf 30 keywords  = 0.5742659946271156
+rev_metric1
+AUC for the rev_metric1 5 keywords  = 0.6316311971410615
+rev_metric1
+AUC for the rev_metric1 10 keywords  = 0.7012403091171793
+rev_metric1
+AUC for the rev_metric1 20 keywords  = 0.7143200239647889
+rev_metric1
+AUC for the rev_metric1 25 keywords  = 0.7268742154938386
+rev_metric2
+AUC for the rev_metric2 5 keywords  = 0.5879857080363278
+rev_metric2
+AUC for the rev_metric2 25 keywords  = 0.6056455374326064
+rev_metric3
+AUC for the rev_metric3 5 keywords  = 0.669464260804197
+rev_metric3
+AUC for the rev_metric3 20 keywords  = 0.6884217557998714
+rev_metric3
+AUC for the rev_metric3 25 keywords  = 0.6908765349112975
+rev_metric4
+AUC for the rev_metric4 5 keywords  = 0.5602630959601673
+rev_metric4
+AUC for the rev_metric4 10 keywords  = 0.5873617838033701
+######################## ctfidf AUC Results ########################
+ctfidf AUC : 0.64       index : 30.00 
+######################## rev_metric1 AUC Results ########################
+rev_metric1 AUC : 0.73  index : 25.00 
+######################## rev_metric2 AUC Results ########################
+rev_metric2 AUC : 0.79  index : 25.00 
+######################## rev_metric3 AUC Results ########################
+rev_metric3 AUC : 0.79  index : 25.00 
+######################## rev_metric4 AUC Results ########################
+rev_metric4 AUC : 0.60  index : 10.00 
