@@ -1,0 +1,71 @@
+dates[0] = 2019_08_01
+1065 243
+2-1. Proposed Method
+rev_metric1 ['델타', '메타버스', '비명계', '화이자', '팝콘뉴스', '변이', '기념관', '가상자산', '확진자', '팬데믹', '보건소', '등교', '모더나', '무증상', '저작권']
+rev_metric2 ['코로나', '경우', '기자', '금지', '뉴스', '재배포', '사진', '이후', '최근', '저작권자', '지난해', '국내', '현재', '관련', '이날']
+rev_metric3 ['코로나', '경우', '뉴스', '기자', '백신', '이후', '국내', '최근', '관련', '현재', '지난해', '해당', '사진', '금지', '치료']
+2-2. Class-Based TF-IDF Baselines
+ctfidf ['코로나', '중', '경우', '기자', '금지', '뉴스', '시', '재배포', '사진', '는', '이후', '최근', '전', '저작권자', '지난해']
+(1052,) (230,)
+ctfidf
+AUC for the ctfidf 5 keywords  = 0.5696593144799943
+ctfidf
+AUC for the ctfidf 10 keywords  = 0.5856159743530749
+rev_metric1
+AUC for the rev_metric1 5 keywords  = 0.5670560935063078
+rev_metric1
+AUC for the rev_metric1 10 keywords  = 0.6147046733696686
+rev_metric2
+AUC for the rev_metric2 5 keywords  = 0.5993252728060685
+rev_metric3
+AUC for the rev_metric3 5 keywords  = 0.6022283281645
+######################## ctfidf AUC Results ########################
+ctfidf AUC : 0.77       index : 10.00 
+######################## rev_metric1 AUC Results ########################
+rev_metric1 AUC : 0.60  index : 10.00 
+######################## rev_metric2 AUC Results ########################
+rev_metric2 AUC : 0.77  index : 5.00 
+######################## rev_metric3 AUC Results ########################
+rev_metric3 AUC : 0.75  index : 5.00 
+(covid) climate@miffy:/mnt/DATA1/climate/230518_hb_covid/covid-19-2$ python3 final.py --lang 'Japan' --count 100; python3 final_classifier.py --lang 'Japan' --count 100;
+dates[0] = 2019_08_01
+1065 243
+2-1. Proposed Method
+rev_metric1 ['陰性', '隔離', '陽性', '自粛', '軽症', '消毒', '療養', '倦怠', '濃厚', '知事', '検温', '漢方', '延期', '花粉', '要請']
+rev_metric2 ['感染', '新型', '自分', '時間', '場合', '世界', '症状', '必要', '女性', '患者', '見る', '写真', '研究', '情報', '発表']
+rev_metric3 ['感染', '新型', '症状', '検査', '拡大', '医療', '場合', '発表', '患者', '確認', '対策', '自分', '発熱', '接触', '病院']
+2-2. Class-Based TF-IDF Baselines
+ctfidf ['日', '人', '年', '月', '者', '思', '感染', '中', '上', '性', '大', '行', '時', '感', '後']
+(1052,) (230,)
+ctfidf
+AUC for the ctfidf 5 keywords  = 0.571306058708687
+ctfidf
+AUC for the ctfidf 10 keywords  = 0.6109275921019247
+ctfidf
+AUC for the ctfidf 15 keywords  = 0.63129658873112
+ctfidf
+AUC for the ctfidf 25 keywords  = 0.6492919039422367
+rev_metric1
+AUC for the rev_metric1 5 keywords  = 0.6926055209510221
+rev_metric1
+AUC for the rev_metric1 10 keywords  = 0.7383855763579916
+rev_metric1
+AUC for the rev_metric1 25 keywords  = 0.7484336015339308
+rev_metric2
+AUC for the rev_metric2 5 keywords  = 0.6848418344746783
+rev_metric3
+AUC for the rev_metric3 5 keywords  = 0.6530675499196182
+rev_metric3
+AUC for the rev_metric3 10 keywords  = 0.6705371866729226
+rev_metric3
+AUC for the rev_metric3 15 keywords  = 0.6750869219163118
+rev_metric3
+AUC for the rev_metric3 25 keywords  = 0.6898754539173587
+######################## ctfidf AUC Results ########################
+ctfidf AUC : 0.66       index : 25.00 
+######################## rev_metric1 AUC Results ########################
+rev_metric1 AUC : 0.76  index : 25.00 
+######################## rev_metric2 AUC Results ########################
+rev_metric2 AUC : 0.69  index : 5.00 
+######################## rev_metric3 AUC Results ########################
+rev_metric3 AUC : 0.67  index : 25.00 
