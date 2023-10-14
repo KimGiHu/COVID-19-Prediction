@@ -1,0 +1,44 @@
+dates[0] = 2019_08_01
+1065 243
+2-1. Proposed Method
+rev_metric1 ['monkeypox', 'distancing', 'covid', 'delta', 'coronavirus', 'lockdown', 'pcr', 'quarantine', 'pandemic', 'swab', 'mrna', 'abortion', 'leukemia', 'psoriasis', 'cohort']
+rev_metric1 ['monkeypox', 'distancing', 'covid', 'delta', 'coronavirus', 'lockdown', 'pcr', 'quarantine', 'pandemic', 'swab', 'mrna', 'abortion', 'leukemia', 'psoriasis', 'cohort']
+rev_metric2 ['people', 'time', 'patient', 'covid', 'day', 'symptom', 'health', 'disease', 'study', 'treatment', 'body', 'life', 'week', 'child', 'risk']
+rev_metric2 ['people', 'time', 'patient', 'covid', 'day', 'symptom', 'health', 'disease', 'study', 'treatment', 'body', 'life', 'week', 'child', 'risk']
+rev_metric3 ['covid', 'people', 'symptom', 'patient', 'time', 'coronavirus', 'virus', 'study', 'day', 'health', 'treatment', 'infection', 'disease', 'risk', 'person']
+2-2. Class-Based TF-IDF Baselines
+rev_metric3 ['covid', 'people', 'symptom', 'patient', 'time', 'coronavirus', 'virus', 'study', 'day', 'health', 'treatment', 'infection', 'disease', 'risk', 'person']
+2-2. Class-Based TF-IDF Baselines
+ctfidf ['people', 'time', 'patient', 'day', 'symptom', 'covid', 'health', 'disease', 'study', 'treatment', 'body', 'week', 'life', 'child', 'risk']
+ctfidf ['people', 'time', 'patient', 'day', 'symptom', 'covid', 'health', 'disease', 'study', 'treatment', 'body', 'week', 'life', 'child', 'risk']
+rev_metric1 ['monkeypox', 'distancing', 'covid', 'delta', 'coronavirus', 'lockdown', 'pcr', 'quarantine', 'pandemic', 'swab', 'mrna', 'abortion', 'leukemia', 'psoriasis', 'cohort']
+rev_metric2 ['people', 'time', 'patient', 'covid', 'day', 'symptom', 'health', 'disease', 'study', 'treatment', 'body', 'life', 'week', 'child', 'risk']
+rev_metric3 ['covid', 'people', 'symptom', 'patient', 'time', 'coronavirus', 'virus', 'study', 'day', 'health', 'treatment', 'infection', 'disease', 'risk', 'person']
+2-2. Class-Based TF-IDF Baselines
+ctfidf ['people', 'time', 'patient', 'day', 'symptom', 'covid', 'health', 'disease', 'study', 'treatment', 'body', 'week', 'life', 'child', 'risk']
+ctfidf
+AUC for the ctfidf 5 keywords  = 0.624586035957458
+ctfidf
+AUC for the ctfidf 10 keywords  = 0.6982991222505979
+rev_metric1
+AUC for the rev_metric1 5 keywords  = 0.7789187754521398
+rev_metric1
+AUC for the rev_metric1 10 keywords  = 0.7806158306870659
+rev_metric2
+AUC for the rev_metric2 5 keywords  = 0.6882126414641812
+rev_metric2
+AUC for the rev_metric2 10 keywords  = 0.6935873992834246
+rev_metric3
+AUC for the rev_metric3 5 keywords  = 0.6962758886665469
+rev_metric3
+AUC for the rev_metric3 10 keywords  = 0.7115829149893235
+rev_metric3
+AUC for the rev_metric3 20 keywords  = 0.7221213159039015
+######################## ctfidf AUC Results ########################
+ctfidf AUC : 0.84       index : 10.00 
+######################## rev_metric1 AUC Results ########################
+rev_metric1 AUC : 0.84  index : 10.00 
+######################## rev_metric2 AUC Results ########################
+rev_metric2 AUC : 0.83  index : 10.00 
+######################## rev_metric3 AUC Results ########################
+rev_metric3 AUC : 0.85  index : 20.00
