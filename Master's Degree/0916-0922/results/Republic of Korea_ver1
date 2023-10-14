@@ -1,0 +1,29 @@
+dates[0] = 2019_08_01
+1065 243
+2-1. Proposed Method
+rev_metric1 ['델타', '메타버스', '비명계', '화이자', '팝콘뉴스', '변이', '기념관', '가상자산', '확진자', '팬데믹', '보건소', '등교', '모더나', '무증상', '저작권']
+rev_metric2 ['코로나', '경우', '기자', '금지', '뉴스', '재배포', '사진', '이후', '최근', '저작권자', '지난해', '국내', '현재', '관련', '이날']
+rev_metric3 ['코로나', '경우', '뉴스', '기자', '백신', '이후', '국내', '최근', '관련', '현재', '지난해', '해당', '사진', '금지', '치료']
+2-2. Class-Based TF-IDF Baselines
+ctfidf ['코로나', '중', '경우', '기자', '금지', '뉴스', '시', '재배포', '사진', '는', '이후', '최근', '전', '저작권자', '지난해']
+(1052,) (230,)
+ctfidf
+AUC for the ctfidf 5 keywords  = 0.5696593144799943
+ctfidf
+AUC for the ctfidf 10 keywords  = 0.5856159743530749
+rev_metric1
+AUC for the rev_metric1 5 keywords  = 0.5670560935063078
+rev_metric1
+AUC for the rev_metric1 10 keywords  = 0.6147046733696686
+rev_metric2
+AUC for the rev_metric2 5 keywords  = 0.5993252728060685
+rev_metric3
+AUC for the rev_metric3 5 keywords  = 0.6022283281645
+######################## ctfidf AUC Results ########################
+ctfidf AUC : 0.77       index : 10.00 
+######################## rev_metric1 AUC Results ########################
+rev_metric1 AUC : 0.60  index : 10.00 
+######################## rev_metric2 AUC Results ########################
+rev_metric2 AUC : 0.77  index : 5.00 
+######################## rev_metric3 AUC Results ########################
+rev_metric3 AUC : 0.75  index : 5.00 
