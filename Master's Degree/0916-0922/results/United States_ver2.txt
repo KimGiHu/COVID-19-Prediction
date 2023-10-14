@@ -1,0 +1,49 @@
+dates[0] = 2019_08_01
+1065 243
+2-1. Proposed Method
+rev_metric1 ['monkeypox', 'distancing', 'covid', 'delta', 'coronavirus', 'lockdown', 'pcr', 'quarantine', 'pandemic', 'swab', 'mrna', 'abortion', 'leukemia', 'psoriasis', 'cohort']
+rev_metric2 ['people', 'time', 'patient', 'covid', 'day', 'symptom', 'health', 'disease', 'study', 'treatment', 'body', 'life', 'week', 'child', 'risk']
+rev_metric3 ['covid', 'people', 'symptom', 'patient', 'time', 'coronavirus', 'virus', 'study', 'day', 'health', 'treatment', 'infection', 'disease', 'risk', 'person']
+2-2. Class-Based TF-IDF Baselines
+ctfidf ['people', 'time', 'patient', 'day', 'symptom', 'covid', 'health', 'disease', 'study', 'treatment', 'body', 'week', 'life', 'child', 'risk']
+(1052,) (230,)
+ctfidf
+AUC for the ctfidf 5 keywords  = 0.5519025883208559
+ctfidf
+AUC for the ctfidf 10 keywords  = 0.6704359706464151
+ctfidf
+AUC for the ctfidf 15 keywords  = 0.7020482143576388
+ctfidf
+AUC for the ctfidf 25 keywords  = 0.7213576674209269
+ctfidf
+AUC for the ctfidf 30 keywords  = 0.7273168740868772
+rev_metric1
+AUC for the rev_metric1 5 keywords  = 0.656586190836908
+rev_metric1
+AUC for the rev_metric1 10 keywords  = 0.6902568671658385
+rev_metric1
+AUC for the rev_metric1 20 keywords  = 0.7034711110960934
+rev_metric2
+AUC for the rev_metric2 5 keywords  = 0.6255081785205443
+rev_metric2
+AUC for the rev_metric2 10 keywords  = 0.6627914658859014
+rev_metric2
+AUC for the rev_metric2 15 keywords  = 0.6706412499885845
+rev_metric2
+AUC for the rev_metric2 20 keywords  = 0.6951793810063194
+rev_metric2
+AUC for the rev_metric2 25 keywords  = 0.7314395751960487
+rev_metric3
+AUC for the rev_metric3 5 keywords  = 0.6453449983910498
+rev_metric3
+AUC for the rev_metric3 10 keywords  = 0.6994062195796092
+rev_metric3
+AUC for the rev_metric3 20 keywords  = 0.732279610838029
+######################## ctfidf AUC Results ########################
+ctfidf AUC : 0.81       index : 30.00 
+######################## rev_metric1 AUC Results ########################
+rev_metric1 AUC : 0.79  index : 20.00 
+######################## rev_metric2 AUC Results ########################
+rev_metric2 AUC : 0.81  index : 25.00 
+######################## rev_metric3 AUC Results ########################
+rev_metric3 AUC : 0.82  index : 20.00 
