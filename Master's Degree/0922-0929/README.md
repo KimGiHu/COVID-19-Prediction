@@ -18,18 +18,18 @@ freq_multi_v3.py : Discirimitve Keyword Extraction Mehtod
                   sampling_strategy = 'all')           
                   )                                    
 
-- - - - - - 
+
 ## Ver2
 
  make_pipeline(StandardScaler(), SVC(gamma='auto')) 
 
-- - - - - - 
+
 ## Ver3
 
  ros = RandomOverSampler(random_state=0)            
  make_pipeline(StandardScaler(), SVC(gamma='auto')) 
 
-- - - - - - 
+
 ## Ver4
 
    ros = RandomOverSampler(random_state=0)            
