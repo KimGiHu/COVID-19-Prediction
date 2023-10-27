@@ -13,3 +13,19 @@
 3. 특이점 탐지 모델 by Seungtae Kang
 - 아웃라이어들을 감지(?) 탐지(?) 해내는 분류 모데을 학습하도록, 전처리부터 워드 추출방법까지 재설계하여 새로운 분류 시스템을 제안함.
 - 예상되는 문제점 : 특이점 탐지가 잘 가능한지 알기 위해서 한번 이상의 학습이 이루어지기까지의 시간이 크게 소요됨 + 지도학습(Supervised Learning)에서 비지도학습(Unsupervised Learning)으로 학습 방향을 바꾼 것이기에 성능을 보장 가능한가에 대한 의문이 생김.
+
+# 석사학위논문에서 사용한 기계학습 분류모델들 및 분류성능평가 기준
+### 1. Machine Learning 사용한 기법들
+- StandardScaler 함수 + RandomOverSampler 패키지함수를 활용하여 데이터 불균형(Data Imbalance)을 잡아줌
+1) Support Vector Machine
+  - decision function shape1 : one vs. one
+  - decision function shape2 : one vs. the rest
+2) BalancedRandomForest
+3) GaussianProcessClassifier
+  - one vs. one
+  - one vs. the rest
+4) GradientBoostingClassifier / AdaBoostClassifier : 하이퍼파라미터(Hyperparameter)는 기본값을 사용함. 학습한 결과가 앞서 언급한 분류모델들보다 좋지 못함.
+### 2. 분류성능평가 기준
+- 이진분류(Binary-Classification) 모델 --> 다중분류(Multi-Classification) 모델
+- 다중분류모델에서는 micro-Average F1 점수를 분류성능 기준으로 정함.
+- micro-Avg를 계산하기 위해서는 Recall값과 Precision값 Accuracy값이 모두 동일한 값으로 잡히기에, **micro-Avg F1 score = Accruacy** 가 성립한다.
